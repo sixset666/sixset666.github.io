@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квитанция из Excel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Загрузите файл Excel для создания квитанции</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" accept=".xlsx" />
+        <button type="button" onclick="uploadFile()">Загрузить</button>
+    </form>
+    <div id="receipt"></div>
+
+    <script>
+        async function uploadFile() {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+            if (!file) {
+                alert("Выберите файл!");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            displayReceipt(data);
+        }
+
+        function displayReceipt(data) {
+            const receiptDiv = document.getElementById('receipt');
+            if (data.receipts.length === 0) {
+                receiptDiv.innerHTML = '<p>Нет данных для отображения квитанций</p>';
+                return;
+            }
+
+            let receiptsHTML = `
+                <h2>Квитанции</h2>
+                <table>
+                    <tr>
+                        <th>ФИО Родителя</th>
+                        <th>ФИО Участника</th>
+                        <th>Направление</th>
+                        <th>Сумма долга</th>
+                    </tr>
+            `;
+
+            data.receipts.forEach(receipt => {
+                receiptsHTML += `
+                    <tr>
+                        <td>${receipt.name}</td>
+                        <td>${receipt.participant_name}</td>
+                        <td>${receipt.direction}</td>
+                        <td>${receipt.amount}</td>
+                    </tr>
+                `;
+            });
+            
+            receiptsHTML += `</table> 
+             <h3>Суммарный долг: ${data.total_debt}</h3>`;
+            receiptDiv.innerHTML = receiptsHTML;
+        }
+    </script>
+</body>
+</html>
