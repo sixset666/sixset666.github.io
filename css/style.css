@@ -795,3 +795,46 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
+/* contacts */
+
+.contacts {
+  background: #5d473c;
+}
+
+.contacts-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.contacts-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-left {
+  margin-right: 30px;
+}
+
+.contacts-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts-item-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+
+.contacts-item-link {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+color: #fff;
+}
