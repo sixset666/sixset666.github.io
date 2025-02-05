@@ -1,96 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Body Line</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <a href="" class="header-logo">
-                <img src="img/logo.svg" alt="Логотип">
+      <div class="header-container">
+        <a href="" class="header-logo">
+          <img src="img/logo.svg" alt="Логотип" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="" class="header-link"> О нас </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Услуги </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Мастера </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Курсы </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Отзывы </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Запись </a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <img src="img/vk.svg" alt="Вконтакте" />
             </a>
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Услуги
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Мастера
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Курсы
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Запись
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a href="" class="header-link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="social-list">
-                <li class="social-list-item">
-                    <a href="" class="social-link">
-                        <img src="img/vk.svg" alt="Вконтакте">
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a href="" class="social-link">
-                        <img src="img/tg.svg" alt="Телеграм">
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a href="" class="social-link">
-                        <img src="img/whatsapp.svg" alt="Ватсапп">
-                    </a>
-                </li>
-            </ul>
-        </div>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <img src="img/tg.svg" alt="Телеграм" />
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <img src="img/whatsapp.svg" alt="Ватсапп" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <strong class="text">
-                        Студия массажа в Белгороде
-                    </strong>
-                    <h1 class="hero-title">
-                        BODY LINE
-                    </h1>
-                    <p class="hero-descr">
-                        Погрузитесь в мир гармонии и расслабления с нашим оздоровительным массажем! Мы предлагаем не только уникальные сеансы массажа, но и курсы, которые помогут вам освоить искусство массажа самостоятельно.
-                    </p>
-                    <a href="" class="hero-btn">
-                        Записаться
-                    </a>
-                </div>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <strong class="hero-text"> Студия массажа в Белгороде </strong>
+            <h1 class="hero-title">BODY LINE</h1>
+            <p class="hero-descr">
+              Погрузитесь в мир гармонии и расслабления с нашим оздоровительным
+              массажем! Мы предлагаем не только уникальные сеансы массажа, но и
+              курсы, которые помогут вам освоить искусство массажа
+              самостоятельно.
+            </p>
+            <a href="" class="hero-btn"> Записаться </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-offset">
+        <div class="container">
+          <h2 class="about-title">О студии</h2>
+          <div class="about-wrapper">
+            <div class="about-left">
+              <img class="about-img" src="img/about-img.webp" alt="" />
             </div>
-        </section>
+            <div class="about-right">
+              <h3 class="about-right-title">
+                <span> BODY LINE </span>
+                - уютная атмосфера для вашего комфорта
+              </h3>
+              <p class="about-right-descr">
+                В нашей студии мы предлагаем широкий спектр услуг массажа,
+                направленных на оздоровление и расслабление. Наша команда
+                профессиональных массажистов использует только проверенные
+                техники, чтобы помочь вам избавиться от стресса, напряжения и
+                восстановить внутреннее равновесие.
+              </p>
+              <ul class="about-list">
+                <li class="about-list-item">Индивидуальные программы</li>
+                <li class="about-list-item">Атмосфера релаксации</li>
+                <li class="about-list-item">Квалифицированные специалисты</li>
+                <li class="about-list-item">Квалифицированные специалисты</li>
+                <li class="about-list-item">Обучающие курсы</li>
+                <li class="about-list-item">Обучающие курсы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-offset">
+        <div class="container">
+          <h2 class="services-title">Наши услуги</h2>
+          <div class="services-wrapper">
+            <ul class="services-list">
+              <li class="services-list-item" data-target="services-1">
+                Общий массаж тела
+              </li>
+              <li class="services-list-item" data-target="services-2">
+                Массаж спины
+              </li>
+              <li class="services-list-item" data-target="services-3">
+                Антицеллюлитный массаж
+              </li>
+              <li class="services-list-item" data-target="services-4">
+                Лимфодренажный массаж
+              </li>
+              <li class="services-list-item" data-target="services-5">
+                Детский массаж
+              </li>
+              <li class="services-list-item" data-target="fire-massage">
+                Огненный массаж
+              </li>
+              <li
+                class="services-list-item"
+                data-target="ice-and-whiskey-massage"
+              >
+                Спа Огненный массаж «Лёд и виски»
+              </li>
+              <li class="services-list-item" data-target="face-massage">
+                Массаж лица
+              </li>
+            </ul>
+            <div class="services-card active" id="services-1">
+              <div class="services-card-left">
+                <h3 class="services-card-title">Общий массаж тела</h3>
+                <p class="services-card-descr">
+                  Общий массаж тела — это идеальный способ снять напряжение и
+                  восстановить гармонию в организме. Наши опытные массажисты
+                  используют различные техники для глубокого расслабления мышц,
+                  улучшения кровообращения и снятия стресса. После сеанса вы
+                  почувствуете прилив сил и легкость, а ваше настроение
+                  значительно улучшится. Позвольте себе насладиться моментом
+                  заботы о себе — запишитесь на общий массаж тела уже сегодня!
+                </p>
+                <div class="services-card-wrapper">
+                  <strong class="services-card-price"> 1 500 - 1 800 ₽ </strong>
+                  <a href="" class="services-card-btn"> Записаться </a>
+                </div>
+              </div>
+              <div class="services-card-right">
+                <img
+                  src="img/female-masseur-giving-back-massage-client.webp"
+                  alt=""
+                  class="services-card-img"
+                />
+              </div>
+            </div>
+            <div class="services-card" id="services-2">
+              <div class="services-card-left">
+                <h3 class="services-card-title">Массаж спины</h3>
+                <p class="services-card-descr">
+                  Массаж спины — это уникальная процедура, направленная на
+                  глубокую проработку мышц и снятие напряжения. Он помогает
+                  устранить хроническую усталость, улучшить кровообращение и
+                  восстановить нормальный тонус мышц. Благодаря различным
+                  техникам, таким как поглаживание, растирание и разминание,
+                  массаж спины способствует снятию болей и зажимов, улучшая
+                  общее самочувствие.
+                  <br />
+                  <br />
+                  Эта процедура особенно полезна для людей, ведущих
+                  малоподвижный образ жизни или работающих в сидячем положении.
+                  Массаж спины не только улучшает физическое состояние, но и
+                  положительно влияет на эмоциональное равновесие, помогая
+                  справиться со стрессом и повысить уровень энергии.
+                </p>
+                <div class="services-card-wrapper">
+                  <strong class="services-card-price"> 1 200 ₽ </strong>
+                  <a href="" class="services-card-btn"> Записаться </a>
+                </div>
+              </div>
+              <div class="services-card-right">
+                <img
+                  src="img/woman-getting-back-massage-from-masseur.webp"
+                  alt=""
+                  class="services-card-img"
+                />
+              </div>
+            </div>
+            <div class="services-card" id="services-3">
+              <div class="services-card-left">
+                <h3 class="services-card-title">Антицеллюлитный массаж</h3>
+                <p class="services-card-descr">
+                  Антицеллюлитный массаж — это специализированная процедура,
+                  направленная на уменьшение проявлений целлюлита и улучшение
+                  состояния кожи. Он включает в себя механическое воздействие на
+                  проблемные зоны, что способствует улучшению кровообращения,
+                  лимфодренажа и обмена веществ. Массаж помогает разбить жировые
+                  отложения, активизирует выведение токсинов и улучшает текстуру
+                  кожи, делая её более упругой и гладкой.
+                </p>
+                <div class="services-card-wrapper">
+                  <strong class="services-card-price"> 1 500 - 1 800 ₽ </strong>
+                  <a href="" class="services-card-btn"> Записаться </a>
+                </div>
+              </div>
+              <div class="services-card-right">
+                <img
+                  src="img/relaxing-abdomen-massage.webp"
+                  alt=""
+                  class="services-card-img"
+                />
+              </div>
+            </div>
+
+            <div class="services-card" id="services-4">
+              <div class="services-card-left">
+                <h3 class="services-card-title">Лимфодренажный массаж</h3>
+                <p class="services-card-descr">
+                  Откройте для себя силу лимфодренажного массажа!
+                  <br /><br />
+                  Лимфодренажный массаж — это уникальная процедура, которая
+                  помогает вашему организму избавиться от токсинов и лишней
+                  жидкости, восстанавливая здоровье и красоту. Под воздействием
+                  мягких и ритмичных движений массажиста активируется
+                  лимфатическая система, что способствует улучшению
+                  кровообращения и выведению шлаков. <br />
+                  <br />
+                  Эта процедура не только уменьшает отеки и целлюлит, но и
+                  укрепляет иммунитет, повышает уровень энергии и улучшает общее
+                  самочувствие. Вы почувствуете легкость в теле и улучшение
+                  настроения уже после первого сеанса!
+                </p>
+                <div class="services-card-wrapper">
+                  <strong class="services-card-price"> 1 500 - 1 800 ₽ </strong>
+                  <a href="" class="services-card-btn"> Записаться </a>
+                </div>
+              </div>
+              <div class="services-card-right">
+                <img src="img/1.webp" alt="" class="services-card-img" />
+              </div>
+            </div>
+            <div class="services-card" id="services-5">
+              <div class="services-card-left">
+                <h3 class="services-card-title">Детский массаж</h3>
+                <p class="services-card-descr">
+                  Подарите вашему ребенку здоровье и гармонию!
+                  <br /><br />
+                  Детский массаж — это важная процедура, которая способствует
+                  гармоничному развитию и укреплению здоровья вашего малыша. Он
+                  помогает улучшить работу сердечно-сосудистой и нервной систем,
+                  активизирует обмен веществ и укрепляет мышечный тонус.
+                  <br /><br />
+                  Регулярные сеансы массажа способствуют:
+                  <br />
+                  ● Развитию координации и правильной осанки<br />
+                  ● Профилактике заболеваний, таких как плоскостопие и
+                  сколиоз<br />
+                  ● Улучшению пищеварения и снятию напряжения
+                </p>
+                <div class="services-card-wrapper">
+                  <strong class="services-card-price"> 1 000₽ </strong>
+                  <a href="" class="services-card-btn"> Записаться </a>
+                </div>
+              </div>
+              <div class="services-card-right">
+                <img
+                  src="img/hands-mother-playing-with-baby-boy-cradle.webp"
+                  alt=""
+                  class="services-card-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="masters section-offset">
+        <div class="container">
+          <h2 class="masters-title">Наши мастера</h2>
+          <div class="contenedor">
+            <div
+              class="card principal"
+              id="card-1"
+              ontouchstart="onTouchStart(event)"
+              ontouchend="onTouchEnd(event)"
+            >
+              <div class="card-image">
+                <img
+                  src="img/5325763501945383045.webp"
+                  alt="Imagen de la escena"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="masters-card-title">1Соценко Надежда</h3>
+                <p class="masters-card-descr">
+                  Основатель студии Body Line и преподаватель массажа
+                </p>
+                <div class="card-navigation">
+                  <div>
+                    <span class="dot active-dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <div class="buttons">
+                    <button onclick="nextCard()" class="next-button">
+                      &#8594;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card siguiente"
+              id="card-2"
+              ontouchstart="onTouchStart(event)"
+              ontouchend="onTouchEnd(event)"
+            >
+              <div class="card-image">
+                <img
+                  src="img/5325763501945383045.webp"
+                  alt="Imagen de la escena"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="masters-card-title">2Соценко Надежда</h3>
+                <p class="masters-card-descr">
+                  Основатель студии Body Line и преподаватель массажа
+                </p>
+                <div class="card-navigation">
+                  <div>
+                    <span class="dot"></span>
+                    <span class="dot active-dot"></span>
+
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <div class="buttons">
+                    <button onclick="previousCard()" class="previous-button">
+                      &#8592;
+                    </button>
+                    <button onclick="nextCard()" class="next-button">
+                      &#8594;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card siguiente"
+              id="card-3"
+              ontouchstart="onTouchStart(event)"
+              ontouchend="onTouchEnd(event)"
+            >
+              <div class="card-image">
+                <img
+                  src="img/5325763501945383045.webp"
+                  alt="Imagen de la escena"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="masters-card-title">3Соценко Надежда</h3>
+                <p class="masters-card-descr">
+                  Основатель студии Body Line и преподаватель массажа
+                </p>
+                <div class="card-navigation">
+                  <div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active-dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <div class="buttons">
+                    <button onclick="previousCard()" class="previous-button">
+                      &#8592;
+                    </button>
+                    <button onclick="nextCard()" class="next-button">
+                      &#8594;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card siguiente"
+              id="card-4"
+              ontouchstart="onTouchStart(event)"
+              ontouchend="onTouchEnd(event)"
+            >
+              <div class="card-image">
+                <img
+                  src="img/5325763501945383045.webp"
+                  alt="Imagen de la escena"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="masters-card-title">4Соценко Надежда</h3>
+                <p class="masters-card-descr">
+                  Основатель студии Body Line и преподаватель массажа
+                </p>
+                <div class="card-navigation">
+                  <div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active-dot"></span>
+
+                    <span class="dot"></span>
+                  </div>
+                  <div class="buttons">
+                    <button onclick="previousCard()" class="previous-button">
+                      &#8592;
+                    </button>
+                    <button onclick="nextCard()" class="next-button">
+                      &#8594;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card siguiente2"
+              id="card-5"
+              ontouchstart="onTouchStart(event)"
+              ontouchend="onTouchEnd(event)"
+            >
+              <div class="card-image">
+                <img
+                  src="img/5325763501945383045.webp"
+                  alt="Imagen de la escena"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="masters-card-title">5Соценко Надежда</h3>
+                <p class="masters-card-descr">
+                  Основатель студии Body Line и преподаватель массажа
+                </p>
+                <div class="card-navigation">
+                  <div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                    <span class="dot"></span>
+                    <span class="dot active-dot"></span>
+                  </div>
+                  <div class="buttons">
+                    <button onclick="previousCard()" class="previous-button">
+                      &#8592;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses section-offset">
+        <div class="container">
+          <h2 class="courses-title">Наши курсы</h2>
+          <div class="courses-wrapper">
+            <button class="nav-btn prev">&#8592;</button>
+            <div class="slider-container">
+              <div class="slide active">
+                <div class="slide-content">
+                  <div class="slide-left">
+                    <img width="600" src="img/course-1.jpg" alt="" />
+                  </div>
+                  <div class="slide-right">
+                    <h3 class="slide-right-title">Курс «Коррекция Фигуры»</h3>
+                    <p class="slide-right-descr">
+                      Обучение комплексной программы по коррекции фигуры , в
+                      сочетании различных техник 36 академических часов .
+                      Анатомические особенности строения подкожной жировой
+                      клетчатки Типы телосложения Антицеллюлитный массаж
+                      Лимфодренажный массаж
+                    </p>
+                    <div class="slide-wrapper">
+                      <strong class="slide-right-price"> 12 000 ₽ </strong>
+                      <a href="#" class="slide-right-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="slide-left">
+                    <img width="600" src="img/course-1.jpg" alt="" />
+                  </div>
+                  <div class="slide-right">
+                    <h3 class="slide-right-title">Курс «Коррекция Фигуры»</h3>
+                    <p class="slide-right-descr">
+                      Обучение комплексной программы по коррекции фигуры , в
+                      сочетании различных техник 36 академических часов .
+                      Анатомические особенности строения подкожной жировой
+                      клетчатки Типы телосложения Антицеллюлитный массаж
+                      Лимфодренажный массаж
+                    </p>
+                    <div class="slide-wrapper">
+                      <strong class="slide-right-price"> 12 000 ₽ </strong>
+                      <a href="#" class="slide-right-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="slide-left">
+                    <img width="600" src="img/course-1.jpg" alt="" />
+                  </div>
+                  <div class="slide-right">
+                    <h3 class="slide-right-title">Курс «Коррекция Фигуры»</h3>
+                    <p class="slide-right-descr">
+                      Обучение комплексной программы по коррекции фигуры , в
+                      сочетании различных техник 36 академических часов .
+                      Анатомические особенности строения подкожной жировой
+                      клетчатки Типы телосложения Антицеллюлитный массаж
+                      Лимфодренажный массаж
+                    </p>
+                    <div class="slide-wrapper">
+                      <strong class="slide-right-price"> 12 000 ₽ </strong>
+                      <a href="#" class="slide-right-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <button class="nav-btn next">&#8594;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section-offset">
+        <div class="container">
+          <h2 class="reviews-title">Отзывы</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel client-testimonial-carousel">
+                <div class="single-testimonial-item">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam
+                    voluptates quidem.
+                  </p>
+                  <h3>Jane Doe</h3>
+                </div>
+                <div class="single-testimonial-item">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam
+                    voluptates quidem.
+                  </p>
+                  <h3>Jane Doe</h3>
+                </div>
+                <div class="single-testimonial-item">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam
+                    voluptates quidem.
+                  </p>
+                  <h3>Jane Doe</h3>
+                </div>
+                <div class="single-testimonial-item">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam
+                    voluptates quidem.
+                  </p>
+                  <h3>Jane Doe</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback section-offset">
+        <div class="container">
+          <h2 class="feedback-title">Запись</h2>
+          <div class="feedback-wrapper flex">
+            <div class="feedback-left">
+              <script src="https://forms.yandex.ru/_static/embed.js"></script>
+              <iframe
+                src="https://forms.yandex.ru/u/67a20d70e010db699b0fbb67/?iframe=1"
+                frameborder="0"
+                name="ya-form-67a20d70e010db699b0fbb67"
+                width="650"
+              ></iframe>
+            </div>
+            <div class="feedback-right">
+              <img src="img/5325976424949082055 1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts-title">
+            Контакты
+          </h2>
+          <div class="contacts-wrapper">
+            <div class="contacts-left">
+
+            </div>
+            <div class="contacts-right">
+              
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const listItems = document.querySelectorAll(".services-list-item");
+        const cards = document.querySelectorAll(".services-card");
+
+        listItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            cards.forEach((card) => {
+              if (card.id === targetId) {
+                card.classList.add("active");
+              } else {
+                card.classList.remove("active");
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
