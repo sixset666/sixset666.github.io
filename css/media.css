@@ -1,0 +1,496 @@
+@media (max-width: 1800px) {
+  .hero {
+    background-size: 500px;
+  }
+}
+
+@media (max-width: 1270px) {
+  body {
+    min-width: 320px !important;
+  }
+
+  .hero {
+    background-image: none;
+    padding: 100px 0;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    display: none;
+  }
+  .menu_button,
+  .menu_button span {
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .social-link img {
+    width: 40px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-left {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+  }
+
+  .services-list {
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  .services-list-item {
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-list-item:not(:last-child) {
+    margin-right: 20px;
+    border-right: 1px solid #5d473c;
+  }
+
+  .services-card.active {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .slider-container {
+    width: 800px;
+    height: 700px;
+  }
+
+  .slide-content {
+    flex-direction: column;
+  }
+
+  .slide-left {
+    width: 100%;
+    overflow: hidden;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 0px;
+    background-image: url("../img/5325763501945383041.jpg");
+  }
+
+  .form-frame {
+    width: 450px;
+  }
+
+  .slide-right {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .slide-right-descr {
+    max-width: 100%;
+    height: 120px;
+  }
+
+  .feedback-wrapper {
+    align-items: center;
+  }
+
+  .feedback-left {
+    margin-right: 40px;
+  }
+
+  .feedback-right img {
+    width: 400px;
+  }
+
+  .footer-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav {
+    margin-bottom: 20px;
+  }
+
+  .owl-item.active,
+  .owl-item {
+    width: 300px !important;
+  }
+
+  .single-testimonial-item p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-frame {
+    width: 300px;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+
+  .contacts-left {
+    margin-right: 0px;
+  }
+
+  .contacts-left div iframe {
+    width: 100%;
+  }
+
+  .contacts-social-list {
+    margin-bottom: 20px;
+  }
+
+  .feedback-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-logo img {
+    width: 150px;
+  }
+
+  .social-link img {
+    width: 30px;
+  }
+
+  .hero-title {
+    font-size: 68px;
+  }
+
+  .hero-descr {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+  }
+
+  .about-img {
+    width: 90%;
+  }
+
+  .services-list-item {
+    min-width: 250px;
+    font-size: 18px;
+  }
+
+  .services-card {
+    flex-direction: column-reverse;
+  }
+
+  .services-card-left,
+  .services-card-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .services-card-right {
+    margin-bottom: 30px;
+  }
+
+  .services-card-title {
+    font-size: 28px;
+  }
+
+  .services-card-descr {
+    max-width: 100%;
+    height: 150px;
+    font-size: 14px;
+  }
+
+  .contenedor {
+    overflow-x: hidden;
+  }
+
+  .slider-container {
+    width: 500px;
+  }
+
+  /* .row {
+    height: 254px;
+    overflow-y: hidden;
+  } */
+
+  .feedback-right img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-offset {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .row {
+    height: 210px;
+    overflow-y: hidden;
+}
+
+  .single-testimonial-item {
+    padding: 0px 20px;
+  }
+
+  .single-testimonial-item:before {
+    content: "";
+}
+
+.single-testimonial-item:after {
+  background: #ddd;
+  content: "";
+  height: 70%;
+  left: 60px;
+  position: absolute;
+  top: 10%;
+  width: 0px;
+}
+
+  .hero-text {
+    font-size: 22px;
+  }
+
+  .social-list {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-descr {
+    font-size: 16px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .about-right-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-right-title span {
+    font-size: 30px;
+  }
+
+  .about-right-descr {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .about-list-item {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .services-title {
+    font-size: 42px;
+  }
+
+  .services-card-title {
+    margin-bottom: 20px;
+  }
+
+  .services-card-descr {
+    margin-bottom: 30px;
+  }
+
+  .services-card-price {
+    font-size: 24px;
+  }
+
+  .services-card-btn {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 300px;
+    height: 650px;
+  }
+
+  .card-content {
+    min-height: 180px;
+  }
+
+  .card-image {
+    padding: 0;
+  }
+
+  .masters-card-title {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .masters-card-descr {
+    font-size: 16px;
+  }
+
+  .masters-title {
+    font-size: 42px;
+  }
+
+  .courses-title {
+    font-size: 42px;
+  }
+
+  .slider-container {
+    width: 300px;
+  }
+
+  .slide-left {
+    width: 300px;
+  }
+
+  .slide-right {
+    padding: 10px 0px;
+  }
+
+  .slide-right-title {
+    font-size: 26px;
+  }
+
+  .slide-right-descr {
+    font-size: 12px;
+  }
+
+  .slide-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slide-right-price {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .slide-right-btn {
+    font-size: 18px;
+  }
+
+  .reviews-title {
+    font-size: 42px;
+  }
+
+  .feedback-title {
+    font-size: 42px;
+  }
+
+  .form-frame,
+  .feedback-left {
+    width: 100%;
+    margin: 0;
+  }
+  .feedback-right {
+    display: none;
+  }
+
+  .contacts-title {
+    font-size: 42px;
+  }
+
+  .contacts-item {
+    margin-bottom: 10px;
+  }
+
+  .contacts-item-title {
+    font-size: 24px;
+  }
+
+  .contacts-item-link {
+    font-size: 18px;
+  }
+
+  .contacts-btn {
+    font-size: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .footer-list-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .footer-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .services-list-item {
+    min-width: fit-content;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .services-list-item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .slider-container {
+    width: 280px;
+    height: 760px;
+  }
+
+  .nav-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slide-right {
+    padding: 10px;
+  }
+
+  .slide-right-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
