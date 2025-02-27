@@ -147,3 +147,42 @@ $(document).ready(function(){
 //      navText:["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>" ]
   });
 });
+
+  /* Click Menu Button */ 
+  $('#js_menu_button').on('click', function(){
+    if(!$(this).hasClass('on_menu')){
+      $('#js_menu_button').addClass('on_menu');
+    }else{
+      $('#js_menu_button').removeClass('on_menu');    
+    }
+    return false;
+  });
+
+  const slider = document.querySelector(".reviews-slider");
+const prevBtn1 = document.getElementById("prevReview");
+const nextBtn1 = document.getElementById("nextReview");
+
+let index = 0;
+const reviews = document.querySelectorAll(".single-testimonial-item");
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 105}%)`;
+}
+
+nextBtn1.addEventListener("click", () => {
+  if (index < reviews.length - 1) {
+    index++;
+  } else {
+    index = 0; // Зацикливаем слайды
+  }
+  updateSlider();
+});
+
+prevBtn1.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+  } else {
+    index = reviews.length - 1; // Зацикливаем слайды
+  }
+  updateSlider();
+});
